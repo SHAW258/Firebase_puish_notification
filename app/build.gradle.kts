@@ -1,6 +1,9 @@
+import com.google.firebase.appdistribution.gradle.firebaseAppDistribution
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.google.gms.google.services)
+    alias(libs.plugins.google.firebase.appdistribution)
+
 }
 
 android {
@@ -26,6 +29,15 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+
+        }
+        debug {
+            firebaseAppDistribution {
+                releaseNotes = "Debug build from CI"
+                testers = "indrajitshaw55@gmmail.com"
+                // OR
+                // groups = "internal-testers"
+            }
         }
     }
     compileOptions {

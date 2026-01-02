@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- This file stores the user's preferred deployment target for running the app. -->
 <project version="4">
   <component name="deploymentTargetSelector">
     <selectionStates>
+      <!-- The selection state for the 'app' run configuration. -->
       <SelectionState runConfigName="app">
+        <!-- The selection mode is a dropdown menu. -->
         <option name="selectionMode" value="DROPDOWN" />
+        <!-- The last selected target from the dropdown. -->
         <DropdownSelection timestamp="2026-01-02T09:48:09.058843500Z">
           <Target type="DEFAULT_BOOT">
             <handle>
+              <!-- The identifier for the selected emulator. -->
               <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\Admin\.android\avd\Pixel_9a.avd" />
             </handle>
           </Target>

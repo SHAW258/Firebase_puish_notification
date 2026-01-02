@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- This file contains project-specific Gradle settings. -->
 <project version="4">
+  <!-- This component handles settings related to Gradle project migrations. -->
   <component name="GradleMigrationSettings" migrationVersion="1" />
+  <!-- This component contains the main Gradle settings for the project. -->
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
+      <!-- Settings for the linked Gradle project. -->
       <GradleProjectSettings>
+        <!-- This option specifies that the test runner should be chosen per test. -->
         <option name="testRunner" value="CHOOSE_PER_TEST" />
+        <!-- The path to the external Gradle project. -->
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <!-- The Gradle JVM to use for the project. #GRADLE_LOCAL_JAVA_HOME means it uses the one configured in the IDE. -->
         <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
+        <!-- The modules that are part of this Gradle project. -->
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />

@@ -1,14 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file contains miscellaneous project settings. -->
 <project version="4">
+  <!-- This component enables the external storage configuration manager. -->
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <!-- This component configures the project's SDK and language level. -->
   <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="jbr-21" project-jdk-type="JavaSDK">
+    <!-- This specifies the output directory for the compiled classes. -->
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
+  <!-- This component identifies the project type. -->
   <component name="ProjectType">
     <option name="id" value="Android" />
   </component>
+  <!-- This component stores the state of the visualization tool. -->
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
+        <!-- This option stores the zoom level of the visualization tool. -->
         <option name="scale" value="0.11243652343749999" />
       </ProjectState>
     </option>

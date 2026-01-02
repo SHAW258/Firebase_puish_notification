@@ -1,35 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- This file configures the App Insights tool window in Android Studio. -->
 <project version="4">
   <component name="AppInsightsSettings">
     <option name="tabSettings">
       <map>
+        <!-- Settings for the Android Vitals tab. -->
         <entry key="Android Vitals">
           <value>
             <InsightsFilterSettings>
+              <!-- Filter settings for Android Vitals, currently set to show only ANRs. -->
               <option name="failureTypes">
                 <list>
                   <option value="ANR" />
                 </list>
               </option>
+              <!-- The signal being monitored, UNSPECIFIED means all signals. -->
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
+              <!-- The time interval for which to show data, in this case, the last 7 days. -->
               <option name="timeIntervalDays" value="SEVEN_DAYS" />
+              <!-- The visibility of the data, ALL means show data for all users. -->
               <option name="visibilityType" value="ALL" />
             </InsightsFilterSettings>
           </value>
         </entry>
+        <!-- Settings for the Firebase Crashlytics tab. -->
         <entry key="Firebase Crashlytics">
           <value>
             <InsightsFilterSettings>
+              <!-- Connection settings for Firebase Crashlytics. -->
               <option name="connection">
                 <ConnectionSetting>
+                  <!-- The application ID of the app. -->
                   <option name="appId" value="com.firebase.firebasepuishnotification" />
+                  <!-- The mobile SDK app ID for the app. -->
                   <option name="mobileSdkAppId" value="1:278161730168:android:c66faca3bd4c6d20b51b8d" />
+                  <!-- The Firebase project ID. -->
                   <option name="projectId" value="to-do-fb31d" />
+                  <!-- The Firebase project number. -->
                   <option name="projectNumber" value="278161730168" />
                 </ConnectionSetting>
               </option>
+              <!-- The signal being monitored, UNSPECIFIED means all signals. -->
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
+              <!-- The time interval for which to show data, in this case, the last 30 days. -->
               <option name="timeIntervalDays" value="THIRTY_DAYS" />
+              <!-- The visibility of the data, ALL means show data for all users. -->
               <option name="visibilityType" value="ALL" />
             </InsightsFilterSettings>
           </value>

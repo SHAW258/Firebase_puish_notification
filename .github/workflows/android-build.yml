@@ -1,4 +1,4 @@
-name: Android CI + Firebase Distribution
+name: Android CI + Firebase Distribution (Debug)
 
 on:
   push:
@@ -25,5 +25,13 @@ jobs:
       - name: Grant Gradle permission
         run: chmod +x gradlew
 
-      - name: Build APK
-        run: ./gradlew assembleRelease
+      # 🔐 Create Firebase credentials file
+      - name: Decode Firebase service account
+        run: |
+          echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' > firebase-service-account.json
+
+      # 🚀 Build & upload DEBUG APK
+      - name: Build & Distribute Debug
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: firebase-service-account.json
+        run: ./gradlew assembleDebug appDistributionUploadDebug

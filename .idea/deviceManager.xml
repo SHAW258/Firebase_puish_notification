@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- This file stores settings for the Device Manager in Android Studio. -->
 <project version="4">
   <component name="DeviceTable">
+    <!-- This option specifies the sorting order for the columns in the Device Manager table. -->
     <option name="columnSorters">
       <list>
+        <!-- This state defines that the 'Name' column should be sorted in ascending order. -->
         <ColumnSorterState>
           <option name="column" value="Name" />
           <option name="order" value="ASCENDING" />

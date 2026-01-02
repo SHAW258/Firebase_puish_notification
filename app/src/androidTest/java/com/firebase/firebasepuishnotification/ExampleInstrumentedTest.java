@@ -15,12 +15,16 @@ import static org.junit.Assert.*;
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
+// This annotation tells the test runner to use AndroidJUnit4 to run the tests in this class.
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
+
+    // This annotation marks this method as a test to be run.
     @Test
     public void useAppContext() {
-        // Context of the app under test.
+        // This gets the context of the app being tested. The context provides access to system services and resources.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
+        // This assertion checks if the package name of the app is what we expect it to be. This is a simple way to verify that the correct app is being tested.
         assertEquals("com.firebase.firebasepuishnotification", appContext.getPackageName());
     }
 }

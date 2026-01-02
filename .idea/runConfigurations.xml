@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- This file configures the run configuration producers for the project. -->
 <project version="4">
   <component name="RunConfigurationProducerService">
+    <!-- This option lists the run configuration producers that should be ignored by the IDE. -->
     <option name="ignoredProducers">
       <set>
+        <!-- These producers are all related to creating run configurations for JUnit and Kotlin tests. -->
+        <!-- By ignoring them, the user is likely indicating that they prefer to create these configurations manually. -->
         <option value="com.intellij.execution.junit.AbstractAllInDirectoryConfigurationProducer" />
         <option value="com.intellij.execution.junit.AllInPackageConfigurationProducer" />
         <option value="com.intellij.execution.junit.PatternConfigurationProducer" />
